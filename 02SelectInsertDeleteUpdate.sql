@@ -20,6 +20,7 @@ insert into info values('Laiba',23,100000,0300)
 insert into info(Name,Age,Salary,Contact)values('Laiba',23,100000,0300)
 insert into info(Name,Age,Salary,Contact)values('Anas',50,1000,0300)
 insert into info(Name,Age,Salary,Contact)values('Adnan',28,200000,0301)
+insert into info(Name,Age,Salary,Contact)values('Misbah',28,200000,0301)
 
 
 -- selected column name
@@ -31,6 +32,10 @@ insert into info(Name,Age)values('Misbah',20)
 
 
 -- Updated Query  
-update info set Name ='Arsalan' ,Age =50 Where Id =8
+
+update info set Name ='Arsalan'  Where Id =8
+update info set Name ='Arsalan1' ,Age =60 Where Id =8
 -- *******************DELETE QUERY*******************
 Delete  from info where Id =6
+--for All rows
+Delete  from info

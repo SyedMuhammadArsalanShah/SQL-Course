@@ -507,7 +507,7 @@ select a.name as'Name' , b.name as 'Father Name' from Family a ,Family b where  
 
 
 
--- *******************14UnionGroupByHavingClause*******************
+-- *******************14UnionGroupByHavingClauseAndLike*******************
 -- for create databse
 create database School1
 
@@ -567,7 +567,9 @@ select * from student
 
 select count(Id) , Salary from  student group by Salary having COUNT(ID) <=2;
 
-
+--like 
+SELECT * FROM student
+WHERE Name LIKE 'm%';
 
 
 -- *******************15CASE Statement*******************

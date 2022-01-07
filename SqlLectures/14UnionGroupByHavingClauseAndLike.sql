@@ -57,3 +57,8 @@ select count(Id) , Salary from  student group by Salary;
 select * from student
 
 select count(Id) , Salary from  student group by Salary having COUNT(ID) <=2;
+
+
+--like 
+SELECT * FROM student
+WHERE Name LIKE 'm%';

@@ -78,7 +78,25 @@ Age varchar(10),
 Salary int,
 Contact nvarchar(50),
 ) 
+insert into student(Name,Age,Salary,Contact)values('Laiba',23,100000,0300)
+insert into student(Name,Age,Salary,Contact)values('Anas',50,1000,0300)
+insert into student(Name,Age,Salary,Contact)values('Adnan',28,200000,0301)
+insert into student(Name,Age,Salary,Contact)values('Misbah',28,200000,0301)
 
+insert into faculty(Name,Age,Salary,Contact)values('Talha',23,100000,0300)
+insert into faculty(Name,Age,Salary,Contact)values('Anas ',50,1000  ,0300)
+insert into faculty(Name,Age,Salary,Contact)values('Harryson',28,200000,0301)
+insert into faculty(Name,Age,Salary,Contact)values('Fatimah',28,200000,0301)
+insert into faculty(Name,Age,Salary,Contact)values('jawad',28,300000,0301)
+insert into faculty(Name,Age,Salary,Contact)values('fawad',28,300000,0301)
+insert into faculty(Name,Age,Salary,Contact)values('jawed',28,300000,0301)
+insert into faculty(Name,Age,Salary,Contact)values('fateh',28,300000,0301)
+insert into faculty(Name,Age,Salary,Contact)values('osama',28,10000,0301)
+insert into faculty(Name,Age,Salary,Contact)values('Fatimah',28,10000,0301)
+
+
+
+truncate table student2
 create table student2(
 -- identity auto increment primary key not null
 Id int  primary key ,
@@ -112,7 +130,7 @@ insert into faculty1(Id,Name,Age,Salary,Contact)values(12,'fateh',28,300000,0301
 insert into faculty1(Id,Name,Age,Salary,Contact)values(13,'osama',28,10000,0301)
 insert into faculty1(Id,Name,Age,Salary,Contact)values(14,'Fatimah',28,10000,0301)
 
-
+insert into faculty1(Id,Name,Age,Salary,Contact)values(15,'Fatimah',28,10000,0301)
 
 
 
@@ -121,7 +139,7 @@ insert into faculty1(Id,Name,Age,Salary,Contact)values(14,'Fatimah',28,10000,030
 
 insert into student2 select * from faculty1
 
-insert into student(Id,Name,Age,Salary) select Name,Age,Salary from faculty
+insert into student(Name,Age,Salary) select Name,Age,Salary from faculty
 
 insert into student(Name) select Name from faculty where ID=1
 

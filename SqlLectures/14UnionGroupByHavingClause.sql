@@ -49,3 +49,11 @@ select * from faculty
 select * from student
 
 select count(Id) , Salary from  student group by Salary;
+
+
+
+--having
+
+select * from student
+
+select count(Id) , Salary from  student group by Salary having COUNT(ID) <=2;

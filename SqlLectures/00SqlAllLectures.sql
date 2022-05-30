@@ -478,8 +478,7 @@ CREATE TABLE FAMILY
 (Id int primary key IDENTITY(1,1) NOT NULL,
 Name varchar(20) ,
 DateOfBirth  date ,
-FatherName int ,
-CONSTRAINT FatherName FOREIGN KEY(FatherName)  REFERENCES Family(Id))
+FatherName int FOREIGN KEY  REFERENCES Family(Id))
 
 
 
